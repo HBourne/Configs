@@ -126,4 +126,6 @@ function git_branch {
 #export PS1='\u@\h \[\033[01;36m\]\W\[\033[01;32m\]$(git_branch)\[\033[00m\] \$ '
 export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;35;01m\]\u\[\033[00;00;01m\]\[\033[00;31;01m\]:\[\033[00;00;01m\]\w\[\033[01;32;01m\]$(git_branch)\[\033[01;01;01m\] \$ '
 
-export SSH_AUTH_SOCK=0
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
