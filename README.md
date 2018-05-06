@@ -8,6 +8,7 @@ This repo is used for the storage of my own configuration files.
 1. Git info shown at the end
 2. No hostname
 3. Highlight `grep`
+4. Set SSH_AUTH_SOCKS to 0
 
 #### [.vimrc]
 1. set nu
