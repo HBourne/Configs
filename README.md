@@ -15,3 +15,6 @@ This repo is used for the storage of my own configuration files.
 2. filetype on
 3. set autoindent
 4. set indent
+
+#### [.gpg-agent.conf]
+1. ssh support
